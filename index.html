@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Název Softwaru</title>
+    <title>Nové vlastnosti zpracování obrazu z vozidlových kamer</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,7 +12,7 @@
             padding: 50px;
         }
         .container {
-            max-width: 600px;
+            max-width: 1200px;
             margin: auto;
             background: white;
             padding: 20px;
@@ -24,13 +24,21 @@
         }
         .logos {
             display: flex;
-            justify-content: center;
-            gap: 15px;
+            justify-content: space-between;
+            align-items: center;
             margin: 20px 0;
         }
-        .logos img {
-            width: 100px;
+        .logos img:first-child, .logos img:last-child {
+            width: 30%;
             height: auto;
+            max-height: 150px;
+            object-fit: contain;
+        }
+        .logos img:nth-child(2) {
+            width: 15%;
+            height: auto;
+            max-height: 150px;
+            object-fit: contain;
         }
         .description {
             font-size: 16px;
@@ -46,15 +54,22 @@
 </head>
 <body>
     <div class="container">
-        <h1>Název Softwaru</h1>
         <div class="logos">
-            <img src="logo1.png" alt="Logo 1">
-            <img src="logo2.png" alt="Logo 2">
-            <img src="logo3.png" alt="Logo 3">
+            <img src="imgs/herman_logo.jpeg" alt="Logo 1">
+            <img src="imgs/logo_TACR_zakl.png" alt="Logo 2">
+            <img src="imgs/vutbr.png" alt="Logo 3">
         </div>
-        <p class="description">Tento software poskytuje inovativní řešení pro vaše potřeby. Je navržen tak, aby byl efektivní, spolehlivý a snadno použitelný.</p>
+        <h1>Nové vlastnosti zpracování obrazu z vozidlových kamer</h1>
+
+        <p class="description"><strong>CZ:</strong> Jedná se o SW využívající nové a účinnější algoritmy založené na nových technikách, se zaměřením na vylepšení bezpečnostních technik proti zneužití dat v současném hardwaru řešitele - kamerového systému, tj. odložených zavazadel a poškození vozidla, počítání kapacity spoje, monitoring vzdálenosti lidí, detekce dodržování ochanných opatření, (projetí na červenou, dodržování min vzdálenosti od vozidel).</p>
+        <p class="description"><strong>CZ:</strong> Software byl vyvinut v rámci výzkumného projektu na Herman a VUT v Brně a je na základě smlouvy o užití společných výsledků je dále poskytován dle licenčních podmínek.</p>
+        
+        <p class="description"><strong>EN:</strong> This software utilizes new and more efficient algorithms based on advanced techniques, focusing on enhancing security measures against data misuse in the existing hardware of the system - namely, the camera system. It includes features such as detecting unattended luggage and vehicle damage, counting passenger capacity, monitoring people’s distances, ensuring compliance with safety regulations (e.g., detecting red-light violations and maintaining minimum distance between vehicles).</p>
+        <p class="description"><strong>EN:</strong> The software was developed as part of a research project at Herman and VUT in Brno and, based on an agreement on the use of joint results, is further provided under the licensing terms.</p>
+
         <div class="contact">
-            <p>Kontakt: <strong>email@domena.cz</strong></p>
+            <p><strong>Kontakt:</strong> Ing. Pavel Sikora <br> pavel.sikora@vutbr.cz</p>
+            <p><strong>Contact:</strong> Ing. Pavel Sikora <br> pavel.sikora@vutbr.cz</p>
         </div>
     </div>
 </body>
